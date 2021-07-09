@@ -521,29 +521,53 @@
 
 /* MEDIA QUERYS */
 /*  Tablets in landscape mode, older desktop monitors */
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   :root {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .home-area, 
+  .speech-container, 
+  .speech-body,
+  .speech-img-container {
+    height: 70vh;
+  }
+
+  .home-speech-container {
+    padding-top: 20px;
+  }
+
+  .speech-container {
+    justify-content: center;
   }
 
   .speech-img-container {
-    width: 30%;
+    width: 40%;
   }
 
-  .parallax-container {
-    height: 165px;
+  .speech-img {
+    height: 62vh;
   }
 
   .about-img-containers {
-    width: 32%;
+    width: 30%;
   }
 
   .about-details {
-    width: 60%;
+    width: 65%;
+  }
+
+  .work-top-img {
+    width: 5%;
+  }
+
+  .work-proj {
+    padding: 70px 0;
   }
 
   .work-proj-con, .work-proj-con1 {
-    width: 30%;
+    width: 25%;
+    height: 215px;
   }
 
   .contact-img {
@@ -552,9 +576,20 @@
 }
 
 /*  Tablets in portrait mode, large display smartphones landscape mode */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   :root {
-    font-size: 13px;
+    font-size: 10px;
+  }
+
+  .home-area, 
+  .speech-container, 
+  .speech-body,
+  .speech-img-container {
+    height: 65vh;
+  }
+
+  .home-speech-container {
+    padding-top: 50px;
   }
 
   .speech-img-container {
@@ -562,260 +597,250 @@
   }
 
   .speech-img {
-    height: 85vh;
+    height: 60vh;
   }
 
   .parallax-container {
-    height: 150px;
+    height: 160px;
   }
 
   .about-img-containers {
-    width: 54%;
+    display: none;
   }
 
-  .work-top-p {
-    padding: 30px;
-    text-align: center;
+  .about-details {
+    width: 100%;
   }
 
   .work-top-img {
-    width: 7%;
+    width: 5%;
+  }
+  
+  .work-proj {
+    padding: 50px 0;
   }
 
   .work-proj-con, .work-proj-con1 {
-    width: 30%;
+    width: 25%;
     height: 200px;
   }
 
-  .contact-img {
-    width: 7%;
+  .contact-site {
+    width: 100%;
   }
 }
 
 /*  Smartphones in landscape mode */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 421px) and (max-width: 767px) {
   :root {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .main-body {
     min-height: auto;
   }
   
+  .home-area {
+    height: auto;
+    width: 100%;
+  }
+
   .head-logo {
     padding-left: 15px;
   }
-  
+
   .head-a-contact {
-    padding: 10px;
+    padding: 15px;
   }
-  
-  .home-area {
-    height: auto;
+
+  .home-speech-container {
+    padding-top: 50px;
   }
   
   .speech-container {
     width: 100%;
-    height: 690px;
-    align-items: flex-end;
+    height: auto;
+    justify-content: center;
   }
   
   .speech-body {
-    width: 40%;
+    width: 60%;
     height: auto;
-    display: block;
-    margin: auto 0;
   }
-  
+
   .speech-h3 {
     padding: 20px 0;
   }
-  
-  .speech-h1 {
-    padding: 5px 0;
-  }
-  
+
   .speech-a-resume {
     padding: 10px;
-    margin: 15px 0;
-    width: 120px;
-    text-align: center;
-    display: block;
   }
-  
+
   .speech-img-container {
-    width: 43%;
+    width: 35%;
     height: auto;
     position: unset;
+    bottom: unset;
   }
   
   .speech-img {
     width: 100%;
     height: auto;
     position: unset;
+    bottom: unset;
     display: block;
-    margin: auto 0 0;
+    margin: 0 auto;
   }
 
   .parallax-container {
-    height: 150px;
+    height: 100px;
   }
 
   .about-img-containers {
-    width: 50%;
+    display: none;
+  }
+
+  .about-details {
+    width: 100%;
   }
 
   .work-top-p {
-    padding: 30px;
     text-align: center;
+    padding: 20px 0;
   }
 
   .work-top-img {
-    width: 7%;
+    width: 6%;
+    padding: 3px;
+  }
+
+  .work-proj {
+    padding: 30px 0;
   }
 
   .work-proj-con, .work-proj-con1 {
     width: 30%;
-    height: 200px;
+    height: 130px;
   }
 
-  .contact-img {
-    width: 7%;
+  .contact-site {
+    width: 100%;
   }
 }
 
 /*  Smartphones in portrait mode  */
 @media screen and (max-width: 420px) {
   :root {
-    font-size: 10px;
+    font-size: 8px;
   }
   
   .main-body {
     min-height: auto;
   }
   
+  .home-area {
+    height: auto;
+    width: 100%;
+  }
+
   .head-logo {
     padding-left: 15px;
   }
-  
+
   .head-a-contact {
-    padding: 10px;
-  }
-  
-  .home-area {
-    height: auto;
+    padding: 15px;
   }
   
   .speech-container {
     width: 100%;
-    height: 400px;
-    align-items: flex-end;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 35px;
   }
   
   .speech-body {
-    width: 40%;
+    align-items: center;
+    text-align: center;
+    width: 80%;
     height: auto;
-    display: block;
-    margin: auto 0;
+    padding: 20px 0;
   }
-  
+
   .speech-h3 {
     padding: 20px 0;
   }
-  
-  .speech-h1 {
-    padding: 5px 0;
-  }
-  
+
   .speech-a-resume {
     padding: 10px;
-    margin: 15px 0;
-    width: 120px;
-    text-align: center;
-    display: block;
   }
-  
+
   .speech-img-container {
-    width: 43%;
+    width: 50%;
     height: auto;
     position: unset;
+    bottom: unset;
   }
   
   .speech-img {
     width: 100%;
     height: auto;
     position: unset;
+    bottom: unset;
     display: block;
-    margin: auto 0 0;
+    margin: 0 auto;
   }
-  
+
   .parallax-container {
-    height: 85px;
+    height: 80px;
   }
-  
-  .img-details-container {
-    padding: 20px 0;
-  }
-  
+
   .about-img-containers {
     display: none;
   }
-  
+
   .about-details {
     width: 100%;
   }
 
-  .work-top {
-    padding: 0;
-  }
-
   .work-top-p {
-    padding: 15px;
+    padding: 15px 10px;
     text-align: center;
   }
 
-  .work-top-h4 {
-    padding: 5px 0;
-  }
-
   .work-top-img {
-    width: 10%;
+    width: 12%;
   }
 
   .work-proj {
     padding: 0;
   }
 
-  .work-con-proj{
+  .work-con-proj {
     flex-direction: column;
+    justify-content: center;
     padding: 0;
   }
 
   .work-proj-con, .work-proj-con1 {
     width: 100%;
-    padding: 30px;
-    height: 290px;
+    height: 240px;
+    padding: 20px;
   }
 
-  .contact-p {
-    padding: 7px;
-  }
-
-  .contact-det-p {
-    width: 100%;
-    height: auto;
-    justify-content: flex-start;
-  }
-
-  .contact-icons.material-icons {
-    padding-right: 5px;
+  .contact-img {
+    width: 7%;
   }
 
   .contact-site {
     width: 100%;
   }
 
-  .contact-img {
-    width: 6%;
+  .contact-det-site {
+    padding: 20px 0;
+  }
+
+  .contact-icons.material-icons {
+    padding-right: 5px;
   }
 }
